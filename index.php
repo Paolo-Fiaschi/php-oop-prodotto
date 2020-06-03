@@ -56,15 +56,15 @@
             }
             public function printMe(){
                 echo parent:: printMe()
-                . "modello: " . $this-> modello . "<br>"
-                . "taglia: " . $this-> taglia . "<br><br>";
+                . "Modello: " . $this-> modello . "<br>"
+                . "Taglia: " . $this-> taglia . "<br><br>";
 
             }
         }
         $maglieNewStyle = new Maglia(15, 3, 10, "nero", "cotone");
         $maglieOldStyle = new Maglia(10, 0, 5, "blue", "cotone misto lana");
-        $jeans = new Pantalone("skinny", 46, "nero", "jeans");
-        $pantalone = new Pantalone("pantalone", 50, "verde", "cotone");
+        $jeans1 = new Pantalone("skinny", 46, "nero", "jeans elasticizzato");
+        $jeans2 = new Pantalone("slim fit", 50, "verde", "jeans");
         echo "Maglie: <br>";
         echo "Maglie 'New Style': <br>";
         echo $maglieNewStyle->  printMe();
@@ -72,10 +72,10 @@
         echo $maglieOldStyle->  printMe();
         echo "<br>-----------------------<br><br>";
         echo "Pantaloni: <br>";
+        echo "Jeans : <br>";
+        echo $jeans1-> printMe();
         echo "Jeans: <br>";
-        echo $jeans-> printMe();
-        echo "Pantalone: <br>";
-        echo $pantalone-> printMe();
+        echo $jeans2-> printMe();
 
     ?>
 </head>
